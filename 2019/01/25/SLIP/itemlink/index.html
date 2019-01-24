@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Sawyer Wang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="var xItemIDs={&quot;100&quot;: &quot;e0950c24_ea60358_0.html&quot; 	, &quot;99&quot;: &quot;e0ac0c07_b2e02f3_0.html&quot; 	, &quot;101&quot;: &quot;e07b0c1c_393c0690_0.html&quot; 	, &quot;102&quot;: &quot;e06a0c10_715e0945_0.html&quot;};  var xBkmkIDs={};  $(document).">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sawyer Wang">
+<meta property="og:url" content="http://yoursite.com/2019/01/25/SLIP/itemlink/index.html">
+<meta property="og:site_name" content="Sawyer Wang">
+<meta property="og:description" content="var xItemIDs={&quot;100&quot;: &quot;e0950c24_ea60358_0.html&quot; 	, &quot;99&quot;: &quot;e0ac0c07_b2e02f3_0.html&quot; 	, &quot;101&quot;: &quot;e07b0c1c_393c0690_0.html&quot; 	, &quot;102&quot;: &quot;e06a0c10_715e0945_0.html&quot;};  var xBkmkIDs={};  $(document).">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-01-24T20:28:02.752Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sawyer Wang">
+<meta name="twitter:description" content="var xItemIDs={&quot;100&quot;: &quot;e0950c24_ea60358_0.html&quot; 	, &quot;99&quot;: &quot;e0ac0c07_b2e02f3_0.html&quot; 	, &quot;101&quot;: &quot;e07b0c1c_393c0690_0.html&quot; 	, &quot;102&quot;: &quot;e06a0c10_715e0945_0.html&quot;};  var xBkmkIDs={};  $(document).">
+  
+    <link rel="alternate" href="/atom.xml" title="Sawyer Wang" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Sawyer Wang</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-SLIP/itemlink" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/25/SLIP/itemlink/" class="article-date">
+  <time datetime="2019-01-24T20:28:02.534Z" itemprop="datePublished">2019-01-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+var xItemIDs={"100": "e0950c24_ea60358_0.html"
+	, "99": "e0ac0c07_b2e02f3_0.html"
+	, "101": "e07b0c1c_393c0690_0.html"
+	, "102": "e06a0c10_715e0945_0.html"};
+
+var xBkmkIDs={};
+
+$(document).ready(function(){
+
+	var _urlTarget=function(sHref){
+		var sUrl;
+		var m=sHref.match(/^nyf:\/\/entry\?itemid=(\d+)/i);
+		if(m && m.length>1){
+			var sFn=xItemIDs[m[1]];
+			if(sFn){
+				sUrl=sFn;
+			}else{
+				alert('Cannot locate the target webpage. \n\n' + sHref);
+			}
+			if(!sUrl) sUrl='';
+		}else{
+			m=sHref.match(/^nyf:\/\/entry\?bmid=(\d+)/i);
+			if(m && m.length>1){
+				var sBmID=m[1];
+				if(sBmID){
+					var v=(xBkmkIDs[sBmID]||'').split('\t');
+					if(v && v.length>2){
+						var sItemID=parseInt(v[0]), sSsgName=v[1], sAnchor=v[2];
+						var sFn=xItemIDs[sItemID];
+						if(sFn){
+							sUrl=sFn + '#' + sAnchor;
+						}else{
+							alert('Cannot locate the target webpage. \n\n' + sHref);
+						}
+					}
+				}
+				if(!sUrl) sUrl='';
+			}
+		}
+		return sUrl;
+	};
+
+	var linkOf=function(p){
+		var sUri='';
+		while(p && !sUri){
+			sUri=p.href||'';
+			p=p.parentNode;
+		}
+		return sUri;
+	};
+
+	$('a').click(function(e){
+		//2018.4.5 the target element could be a <span> inside of <a>
+		var sHref=linkOf(e.target);
+		if(sHref){
+			var sUrl=_urlTarget(sHref);
+			if(sUrl){
+				document.location.href=sUrl;
+				return false;
+			}else if(sUrl===''){
+				return false; //2017.10.21 bad nyf:// links;
+			}else{
+				window.open(sHref);
+				return false;
+			}
+		}else{
+			return false;
+		}
+	});
+
+});
+</a></span>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/25/SLIP/itemlink/" data-id="cjrb2l7a0000280v8odlka7gi" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/01/25/SLIP/e0950c24_ea60358_0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/01/25/SLIP/SLIP/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/01/25/SLIP/e06a0c10_715e0945_0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/25/SLIP/e07b0c1c_393c0690_0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/25/SLIP/e0ac0c07_b2e02f3_0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/25/SLIP/e0950c24_ea60358_0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/25/SLIP/itemlink/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Sawyer Wang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
